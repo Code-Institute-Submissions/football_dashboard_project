@@ -1,0 +1,53 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen'!important;
+}
+
+hr {
+    border: 1px solid #333;
+}
+
+
+
+#dashboard-header {
+    text-align: center;
+    color: #ffffff;
+}
+
+.navbar-inverse {
+    border-radius: 0px;
+}
+
+#fouls-yellow-red-chart .x.axis text {
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+
+text.y-axis-label.y-label,
+text.x-axis-label{
+    font-family: 'Oxygen'!important;
+    color: #333;
+}
+
+text.row {
+    color: #333;
+}
+
+.chart-titles {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.dc-chart g.row rect {
+    fill-opacity: 1;
+}
+
+body {
+    background-color: #dcdcdc;
+}
+
+.section-one {
+    background-color: #f1f1f1;
+    border-radius:10px;
+    box-shadow: 3px 3px 10px 2px #888888;
+    padding:px;
+}
