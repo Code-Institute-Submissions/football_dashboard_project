@@ -3,17 +3,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-    border: 1px solid #333;
+    border: 1px solid rgba(51, 51, 51, 0);
 }
 
 
 
 #dashboard-header {
-    text-align: center;
-    color: #ffffff;
+    color: #5a9bca;
 }
 
-.navbar-inverse {
+.navbar-default {
     border-radius: 0px;
 }
 
@@ -26,6 +25,7 @@ text.y-axis-label.y-label,
 text.x-axis-label{
     font-family: 'Oxygen'!important;
     color: #333;
+    font-size: 12px;
 }
 
 text.row {
@@ -42,12 +42,12 @@ text.row {
 }
 
 body {
-    background-color: #dcdcdc;
+    background-color: #15242c;
 }
 
 .sections {
-    background-color: #f1f1f1;
+    background-color: #f8f8f8;
     border-radius:10px;
-    box-shadow: 3px 3px 10px 2px #888888;
-    padding:px;
+    border: 2px solid #5a9bca;
+    margin-bottom: 20px;
 }

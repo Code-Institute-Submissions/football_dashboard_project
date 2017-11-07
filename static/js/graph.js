@@ -175,9 +175,12 @@
         var goalsByTeamHome = teamDimHome.group().reduceSum(dc.pluck('FullTimeHomeGoals'));
         dc.rowChart("#goals-by-team-chart-Home")
             .width(500)
-            .height(500)
+            .height(300)
             .dimension(teamDimHome)
             .group(goalsByTeamHome)
+            .cap(5)
+            .othersGrouper(false)
+            .ordinalColors(['#085792', '#3182bd', '#6baed6',  '#7baec9', '#bcd3ea'])
             // .ordinalColors(r)
             .xAxis().ticks(10); 
             
@@ -186,9 +189,12 @@
         var goalsByTeamAway = teamDimAway.group().reduceSum(dc.pluck('FullTimeAwayGoals'));
         dc.rowChart("#goals-by-team-chart-Away")
             .width(500)
-            .height(500)
+            .height(300)
             .dimension(teamDimAway)
             .group(goalsByTeamAway)
+            .cap(5)
+            .othersGrouper(false)
+             .ordinalColors(['#157533', '#209844', '#31a354',  '#74c476', '#a1d99b'])
             .xAxis().ticks(10); 
             
             dc.renderAll();
