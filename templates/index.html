@@ -6,6 +6,7 @@
           
          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
          <link href="https://fonts.googleapis.com/css?family=Oxygen:700" rel="stylesheet">
+         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/introjs.css"/>
          <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
          
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
@@ -46,6 +47,7 @@
                 </div>
                 <div>
                     <button class="btn btn-success"><a href="javascript:dc.filterAll(); dc.renderAll();" style="color:white;text-decoration: none;">Reset All</a></button>
+                    <button class=" btn btn-info" style="color:white;text-decoration: none;" type="button" autofocus onclick="javascript:introJs().start();">Start Tour</button>
                 </div>
             </div>
         </nav>
@@ -55,12 +57,12 @@
         <div class="container-fluid sections">
             <div class="row">
                 <div class="col-xs-8 chart-cols">
-                    <h4 class="chart-titles">Referees Average Fouls / Yellow Cards / Red Cards</h4>
+                    <h4 class="chart-titles" data-step="1" data-intro="This stacked bar chart shows normalised data representing referees average fouls, yellow cards and red cards per game">Referees Average Fouls / Yellow Cards / Red Cards</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>
                         <div id="fouls-yellow-red-chart"></div>
                  </div>        
                  <div class="col-xs-4 chart-cols">
-                    <h4 class="chart-titles">Referees Home / Draw / Away Results</h4>
+                    <h4 class="chart-titles" data-step="2" data-intro="Match results have been segmented into home, draw and away">Referees Home / Draw / Away Results</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>
                         <div id="home-draw-away-pie"></div>
                  </div>               
@@ -72,12 +74,12 @@
         <div class="container-fluid sections">    
             <div class="row">
                 <div class="col-xs-6 chart-cols">
-                    <h4 class="chart-titles">Total Shots & Goals</h4>
+                    <h4 class="chart-titles" data-step="3" data-intro="The correlation between total shots and goals represented by a scatter plot chart">Total Shots & Goals</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>
                         <div id="scatter-plot"></div>
                 </div>      
                 <div class="col-xs-6 chart-cols">
-                    <h4 class="chart-titles">Total Shots on Target & Goals</h4>
+                    <h4 class="chart-titles" data-step="4" data-intro="This scatter plot chart showing total shots on taret and goals">Total Shots on Target & Goals</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>
                         <div id="goal-target-scatter-plot"></div>
                 </div>      
@@ -89,12 +91,12 @@
         <div class="container-fluid sections">   
             <div class="row">
                 <div class="col-xs-6 chart-cols">
-                    <h4 class="chart-titles">Top 5 Total Home Goals</h4>
+                    <h4 class="chart-titles" data-step="5" data-intro="The top 5 teams with highest home goals scored presented with a row chart">Top 5 Total Home Goals</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>  
                         <div id="goals-by-team-chart-Home"></div>
                 </div>
                 <div class="col-xs-6 chart-cols">
-                    <h4 class="chart-titles">Top 5 Total Away Goals</h4>
+                    <h4 class="chart-titles" data-step="6" data-intro="This row chart shows the top 5 teams with highest away goals scored">Top 5 Total Away Goals</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>  
                         <div id="goals-by-team-chart-Away"></div>
                 </div>
@@ -122,7 +124,7 @@
         <!--        <div id="team-goals-chart"></div>-->
         <!--</div>-->
 
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.7.0/intro.js" type="text/javascript"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </body>

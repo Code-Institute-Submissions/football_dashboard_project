@@ -58,5 +58,12 @@ body {
     color: #fff;
     background-color: #31a354;
     border-color: #31a354;
-    margin: 20px 100px;
+    margin: 20px 140px;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5a9bca;
+    border-color: #5a9bca;
+    margin: 20px 0px;
 }
