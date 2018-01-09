@@ -6,8 +6,6 @@ hr {
     border: 1px solid rgba(51, 51, 51, 0);
 }
 
-
-
 #dashboard-header {
     color: #5a9bca;
 }
@@ -50,4 +48,15 @@ body {
     border-radius:10px;
     border: 2px solid #5a9bca;
     margin-bottom: 20px;
+}
+
+.chart-cols {
+    display: inline-table;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #31a354;
+    border-color: #31a354;
+    margin: 20px 100px;
 }

@@ -44,6 +44,9 @@
                 <div class="navbar-header">
                     <h2 id="dashboard-header">PREMIER LEAGUE DASHBOARD 2016/17</h2>
                 </div>
+                <div>
+                    <button class="btn btn-success"><a href="javascript:dc.filterAll(); dc.renderAll();" style="color:white;text-decoration: none;">Reset All</a></button>
+                </div>
             </div>
         </nav>
         
@@ -51,12 +54,12 @@
             
         <div class="container-fluid sections">
             <div class="row">
-                <div class="col-xs-8">
+                <div class="col-xs-8 chart-cols">
                     <h4 class="chart-titles">Referees Average Fouls / Yellow Cards / Red Cards</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>
                         <div id="fouls-yellow-red-chart"></div>
                  </div>        
-                 <div class="col-xs-4">
+                 <div class="col-xs-4 chart-cols">
                     <h4 class="chart-titles">Referees Home / Draw / Away Results</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>
                         <div id="home-draw-away-pie"></div>
@@ -68,12 +71,12 @@
             
         <div class="container-fluid sections">    
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-xs-6 chart-cols">
                     <h4 class="chart-titles">Total Shots & Goals</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>
                         <div id="scatter-plot"></div>
                 </div>      
-                <div class="col-xs-6">
+                <div class="col-xs-6 chart-cols">
                     <h4 class="chart-titles">Total Shots on Target & Goals</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>
                         <div id="goal-target-scatter-plot"></div>
@@ -85,12 +88,12 @@
         
         <div class="container-fluid sections">   
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-xs-6 chart-cols">
                     <h4 class="chart-titles">Top 5 Total Home Goals</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>  
                         <div id="goals-by-team-chart-Home"></div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-6 chart-cols">
                     <h4 class="chart-titles">Top 5 Total Away Goals</h4>
                         <script type="text/javascript" src="/static/js/graph.js" charset="utf-8"></script>  
                         <div id="goals-by-team-chart-Away"></div>
